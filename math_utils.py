@@ -1,26 +1,28 @@
 
-
-import sys
-
 def gcd(a: int, b: int) -> int:
-   
+
     while b:
         a, b = b, a % b
     return abs(a)
 
 
 def extended_gcd(a: int, b: int) -> tuple[int, int, int]:
-    
-    if a == 0:
-        return b, 0, 1
-    g, x1, y1 = extended_gcd(b % a, a)
-    x = y1 - (b // a) * x1
-    y = x1
-    return g, x, y
+
+    old_r, r = a, b
+    old_s, s = 1, 0
+    old_t, t = 0, 1
+
+    while r != 0:
+        quotient = old_r // r
+        old_r, r = r, old_r - quotient * r
+        old_s, s = s, old_s - quotient * s
+        old_t, t = t, old_t - quotient * t
+
+    return old_r, old_s, old_t
 
 
 def mod_inverse(a: int, m: int) -> int:
-    
+
     g, x, _ = extended_gcd(a, m)
     if g != 1:
         raise ValueError(f"Odwrotność modularna nie istnieje dla a={a} i m={m} (gcd != 1)")
@@ -28,7 +30,7 @@ def mod_inverse(a: int, m: int) -> int:
 
 
 def mod_pow_iterative(base: int, exp: int, mod: int) -> int:
-    
+
     if mod == 1:
         return 0
     res = 1
@@ -42,5 +44,5 @@ def mod_pow_iterative(base: int, exp: int, mod: int) -> int:
 
 
 def mod_pow_native(base: int, exp: int, mod: int) -> int:
-    """Natywne potęgowanie modularne w Pythonie za pomocą funkcji pow()."""
+
     return pow(base, exp, mod)
