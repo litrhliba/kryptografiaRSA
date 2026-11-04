@@ -21,7 +21,7 @@ Harmonogram:
 
 1) gcd, tożsamość Bézouta, odwrotność, potęgowanie. Mikrobenchmark algorytmów potęgowania, CPU/pamięć operacji na dużych liczbach - 5.11
 
-2) Liczby Carmichaela, znane liczby pierwsze, długość bitowa	Czas generowania per bit, obciążenie wątku CPU podczas prób losowaniaLiczby Carmichaela, znane liczby pierwsze, długość bitowa	Czas generowania per bit, obciążenie wątku CPU podczas prób losowania - 19.11
+2) Liczby Carmichaela, znane liczby pierwsze, długość bitowa	Czas generowania per bit, obciążenie wątku CPU podczas prób losowania - 19.11
 
 3) Konwersja bajtowa, round-trip encrypt-decrypt, granica >=n. Asymetria czasowa szyfrowania (e) vs deszyfrowania (d), alokacje pamięci. - 3.12
 
