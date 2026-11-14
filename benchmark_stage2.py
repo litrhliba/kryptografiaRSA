@@ -1,7 +1,4 @@
-"""
-benchmark_stage2.py - Mikrobenchmarki Etapu 2 z jednakową liczbą prób N dla każdej długości
-Autorzy: Oleksandr Rutyna, Wojciech Miazek
-"""
+
 
 import csv
 import gc
