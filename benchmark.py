@@ -1,7 +1,4 @@
-"""
-benchmark_multi.py - Wielokrotny mikrobenchmark CPU i RAM dla RSA (N = 30 prób)
-Autorzy: Oleksandr Rutyna, Wojciech Miazek
-"""
+
 
 import csv
 import gc
