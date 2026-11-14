@@ -33,7 +33,7 @@ Skład grupy:
 ### Szczegółowy zakres prac
 
 #### Etap 1: Fundamenty numeryczne i mikrobenchmarki (`05.11`)
-- [x] Implementacja klasycznego algorytmu Euklidesa (`gcd`) oraz iteracyjnego rozszerzonego algorytmu Euklidesa (tożsamość Bézouta: $ax + by = \gcd(a, b)$).
+- [x] Implementacja klasycznego algorytmu Euklidesa (`gcd`) oraz iteracyjnego rozszerzonego algorytmu Euklidesa — tożsamość Bézouta: $ax + by = \gcd(a, b)$.
 - [x] Wyznaczanie odwrotności modularnej ($d \equiv e^{-1} \pmod{\varphi(n)}$).
 - [x] Implementacja szybkiego potęgowania modularnego metodą binarną (*Square-and-Multiply*).
 - [x] **Benchmarking:** Porównanie autorskiego potęgowania z wbudowaną funkcją `pow(b, e, m)` oraz pomiar zużycia pamięci (`tracemalloc`, `sys.getsizeof`) dla liczb 2048- i 4096-bitowych.
