@@ -58,8 +58,16 @@ Skład grupy:
 - [ ] Analiza porównawcza surowego RSA względem schematów dopełniania (paddingu PKCS#1 v1.5 / OAEP ze standardu RFC 8017).
 - [ ] **Benchmarking:** Kompleksowe profilowanie całego potoku wykonania (generowanie kluczy $\to$ kodowanie $\to$ szyfrowanie $\to$ deszyfrowanie CRT) za pomocą `cProfile` oraz `tracemalloc`.
 
-Wyniki benchmarku algorytmow potegowania:  
+<h3>Wyniki benchmarku algorytmow potegowania:  </h3>
 <img width="3270" height="1486" alt="rsa_ci_zoom" src="https://github.com/user-attachments/assets/1ae5be97-35bf-410e-9180-72a33ba52852" />
 
 <img width="3270" height="1486" alt="rsa_ci_zoom_4096" src="https://github.com/user-attachments/assets/eb9a1b60-d116-4153-991e-1d21e2920541" />
+<br><br><br><br><br>
+
+
+
+<h3>Wyniki benchmarku generowania liczb pierwszych:  </h3>
+<img width="3869" height="1469" alt="rsa_stage2_mr_vs_aks" src="https://github.com/user-attachments/assets/1815400c-1a4b-46a7-aeee-2a3c7e40e06d" />
+<img width="3871" height="1469" alt="rsa_stage2_generation" src="https://github.com/user-attachments/assets/df8f7f73-62b9-415c-aee9-d2b086905970" />
+
 
